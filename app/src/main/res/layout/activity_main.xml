@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBFC70"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="100dp"
+        app:srcCompat="@mipmap/ruby1"
+        tools:srcCompat="@mipmap/ruby1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:text="Sefi Masithoh"
+        android:textColor="#0E0D0D"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Universitas Teknologi Yogyakarta"
+        android:textColor="#131212"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_fb"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="200dp"
+            android:layout_weight="1"
+            android:background="#F3FF71"
+            android:text="Facebook" />
+
+        <Button
+            android:id="@+id/button_ig"
+            android:layout_width="188dp"
+            android:layout_height="38dp"
+            android:layout_alignRight="@id/button_fb"
+            android:layout_marginRight="-200dp"
+            android:layout_weight="1"
+            android:background="#F3FF71"
+            android:text="INSTAGRAM" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_ig"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:text="MP3 PLAYER"
+            android:textColor="#0A0A0A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="107dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/textView4"
+            android:layout_marginLeft="10dp"
+            android:background="#6ECFFA"
+            android:text="PLAY" />
+
+        <Button
+            android:id="@+id/button_pause"
+            android:layout_width="117dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/textView4"
+            android:layout_alignRight="@id/button_play"
+            android:layout_marginTop="-1dp"
+            android:layout_marginRight="-140dp"
+            android:background="#6ECFFA"
+            android:text="PAUSE" />
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="113dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/textView4"
+            android:layout_alignRight="@id/button_pause"
+            android:layout_marginRight="-140dp"
+            android:background="#6ECFFA"
+            android:text="STOP" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_play"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:text="MP4 PLAYER"
+            android:textColor="#0A0A0A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="290dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/textView3"
+            android:layout_marginLeft="50dp" />
+
+        <Button
+            android:id="@+id/button_playVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_below="@id/videoView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:background="#F0B6FA"
+            android:text="PLAY" />
+
+        <Button
+            android:id="@+id/button_pauseVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@id/videoView"
+            android:layout_alignRight="@id/button_playVideo"
+            android:layout_marginRight="-130dp"
+            android:background="#F0B6FA"
+            android:text="PAUSE" />
+
+        <Button
+            android:id="@+id/button_stopVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@id/videoView"
+            android:layout_alignRight="@id/button_pauseVideo"
+            android:layout_marginRight="-130dp"
+            android:background="#F0B6FA"
+            android:text="STOP" />
+
+    </RelativeLayout>
+
+</LinearLayout>
